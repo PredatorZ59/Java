@@ -28,8 +28,27 @@ public class PG80 {
                 System.out.println("This is a vowel:U.");
                 break;
                
+            case 'A':
+                System.out.println("This is a vowel:A.");
+                break;
+
+            case 'E':
+                System.out.println("This is a vowel:E.");
+                break;
+            case 'I':
+                System.out.println("This is a vowel:I.");
+                break;
+
+            case 'O':
+                System.out.println("This is a vowel:O.");
+                break;
+
+            case 'U':
+                System.out.println("This is a vowel:U.");
+                break;
+
                 default:
-                System.out.println("Error-The Character Entered is a Consonants OR 'Invalid' ");
+                System.out.println("Error-The Character Entered is a Consonant OR 'Invalid' ");
 
         }
 
