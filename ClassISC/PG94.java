@@ -22,9 +22,10 @@ public class PG94 {
         int g=ti.nextInt();
        
         for(i=0;i<z;i++){
-            if(g==a[i])
+            if(g==i){
 
-            System.out.println("Element is:"+i);
+            System.out.println("Element is:"+a[i]);
+            }
             
         }
     }
