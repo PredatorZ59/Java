@@ -11,6 +11,7 @@ public class PG105 {
         onlineGame o=new onlineGame();
         o.offline();
         o.online();
+        
     }
     
 }
