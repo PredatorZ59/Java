@@ -3,7 +3,7 @@ class student{
 }
 
 class teacher extends student{
-    void teach(){System.out.println("teaching...");}
+    void teach(){System.out.println("Teaching...");}
 }
 
 class parent extends student{
