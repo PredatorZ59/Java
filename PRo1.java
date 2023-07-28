@@ -49,7 +49,11 @@ import javax.swing.text.View;
         
         }
 
-        else{
+        else if(uu!=569){
+            System.out.println("You Have Enter Incorrect Username");
+        }
+
+        else if (pp!=123){
             System.out.println("You Have Enter Incorrct Password!");
         }
        
