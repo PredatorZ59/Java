@@ -46,11 +46,6 @@ import javax.swing.text.View;
 
             if(o==6){
                 System.out.println("Session Ended!");
-            }
-
-            else{
-                System.out.println("Invalid Input!!");
-            }
         
         }
 
