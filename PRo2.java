@@ -1,21 +1,23 @@
 import java.util.Scanner;
 
-class PRo1 {
+class PRo2 {
 
-    static void Instructions(String[] a) {
-        for (int i = 0; i < 6; i++) {
+    // CREATING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+
+    static void showInstructions(String[] a) {
+        for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
+        //For easy way we had written the a.length, because we can access all the Strings using it. 
+
+        //for (int i = 0; i < 6; i++) {System.out.println(a[i]);}
+        //We can also use the 6, because we have 6 strings in String a[].
+        
+            
     }
 
-    public static int roll;
-    public static String name;
-    public static String add;
-    public static String phone;
-    public static String sclass;
-    public static String marks;
-
     public static void main(String[] args) {
+
         Scanner ti = new Scanner(System.in);
         System.out.println("Welcome to ***Predator*** Record Storage System!");
 
@@ -29,7 +31,13 @@ class PRo1 {
 
             String a[] = { "1.Add Records", "2.View Records", "3.Search Records", "4.Update Records", "5.Result",
                     "6.Exit" };
-            Instructions(a);
+            showInstructions(a);
+
+            // System.out.println("2.View Records");
+            // System.out.println("3.Search Records");
+            // System.out.println("4.Update Records");
+            // System.out.println("5.Result");
+            // System.out.println("6.Exit");};
 
             System.out.println("Enter the Option=");
             int o = ti.nextInt();
@@ -61,35 +69,43 @@ class PRo1 {
 
                     System.out.println("DATA Stored Successfully!");
 
-                    Instructions(a);
+                    // CALLING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+                    showInstructions(a);
 
+                    System.out.println("Enter the Option=");
+                    ;
 
                 }
             }
 
             if (o == 2) {
                 System.out.println("The Records Stored=>");
-                System.out.println("Roll number:"+roll);
-                Instructions(a);
+                System.out.println("Roll number:");
+                // CALLING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+                showInstructions(a);
             }
 
             if (o == 3) {
                 System.out.println("Enter the roll number to search=");
-                Instructions(a);
+                // CALLING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+                showInstructions(a);
             }
 
             if (o == 4) {
                 System.out.println("Enter the roll number to update=");
-                Instructions(a);
+                // CALLING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+                showInstructions(a);
             }
 
             if (o == 5) {
-                Instructions(a);
+                // CALLING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+                showInstructions(a);
             }
 
             if (o == 6) {
                 System.out.println("Session Ended!");
-                Instructions(a);
+                // CALLING THIS FUNCTION IN ORDER TO SHOW THE INSTRUCTIONS
+                showInstructions(a);
 
             }
 
