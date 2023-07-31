@@ -12,7 +12,6 @@ class PRo2 {
 
         //for (int i = 0; i < 6; i++) {System.out.println(a[i]);}
         //We can also use the 6, because we have 6 strings in String a[].
-        
             
     }
 

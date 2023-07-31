@@ -9,10 +9,12 @@ class PRo1 {
     public static String sclass;
     public static String marks;
     public static int o;
+    public static int ii;
+
 
     public static void main(String[] args) {
         Scanner ti = new Scanner(System.in);
-        int i = 0;
+        int i=0;
         System.out.println("Welcome to ***Predator*** Record Storage System!");
 
         System.out.println("Enter Usename=");
@@ -44,10 +46,16 @@ class PRo1 {
                         System.out.println("Enter Student Roll Number=");
                         int roll = ti.nextInt();
 
-                        String r[] = { "roll" };
+                        int r[] = new int[10];
+
+                        for (ii = 0; ii < 10; ii++) {
+                            r[ii] = ti.nextInt();
+                        }
 
                         System.out.println("Enter Student Name=");
                         String name = ti.next();
+
+                        String na[] = new String[10];
 
                         System.out.println("Enter Student Address=");
                         String add = ti.next();
@@ -67,28 +75,31 @@ class PRo1 {
 
                 if (o == 2) {
                     System.out.println("The Records Stored=>");
-                    System.out.println("Roll number:");
+                    for (int ii = 0; i <10; i++) 
+                        System.out.print(r[ii] + "Roll number:");
                 }
-
-                if (o == 3) {
-                    System.out.println("Enter the roll number to search=");
-                }
-
-                if (o == 4) {
-                    System.out.println("Enter the roll number to update=");
-                }
-                if (o == 5) {
-
-                }
-
-                if (o == 6) {
-                    i = 7;
-                    System.out.println("Session Ended!");
-
-                }
+                
             }
 
-        } else if (uu != 569) {
+            if (o == 3) {
+                System.out.println("Enter the roll number to search=");
+            }
+
+            if (o == 4) {
+                System.out.println("Enter the roll number to update=");
+            }
+            if (o == 5) {
+
+            }
+
+            if (o == 6) {
+                i = 7;
+                System.out.println("Session Ended!");
+
+            }
+        }
+
+        else if (uu != 569) {
             System.out.println("You Have Enter Incorrect Username!");
         }
 
