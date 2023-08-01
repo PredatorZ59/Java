@@ -1,20 +1,22 @@
 import java.util.Scanner;
 
-class PRo1 {
-
+public class PRo1 {
     public static int roll;
     public static String name;
     public static String add;
     public static String phone;
-    public static String sclass;
-    public static String marks;
+    public static int sclass;
+    public static int marks;
     public static int o;
     public static int ii;
-
+    public static int i;
+    public static int num;
+    public static int n;
 
     public static void main(String[] args) {
         Scanner ti = new Scanner(System.in);
-        int i=0;
+        int i=1;
+        PRo1 p[] = new PRo1[100];
         System.out.println("Welcome to ***Predator*** Record Storage System!");
 
         System.out.println("Enter Usename=");
@@ -25,7 +27,7 @@ class PRo1 {
         if (uu == 569 && pp == 123) {
             System.out.println("Welcome Predator!");
 
-            for (i = 1; i < 6;) {
+            for (i = 0; i < 6;) {
 
                 System.out.println("1.Add Records");
                 System.out.println("2.View Records");
@@ -35,39 +37,31 @@ class PRo1 {
                 System.out.println("6.Exit");
                 System.out.println("Enter the option=");
                 o = ti.nextInt();
+            
 
                 if (o == 1) {
                     System.out.println("How many Record do you want to add?");
                     int n = ti.nextInt();
-                    int num;
 
                     for (num = 0; num != n; num++) {
 
                         System.out.println("Enter Student Roll Number=");
-                        int roll = ti.nextInt();
-
-                        int r[] = new int[10];
-
-                        for (ii = 0; ii < 10; ii++) {
-                            r[ii] = ti.nextInt();
-                        }
+                        p[num].roll =ti.nextInt();
 
                         System.out.println("Enter Student Name=");
-                        String name = ti.next();
-
-                        String na[] = new String[10];
+                        p[num].name =ti.next();
 
                         System.out.println("Enter Student Address=");
-                        String add = ti.next();
+                        p[num].add = ti.next();
 
                         System.out.println("Enter Student phone Number=");
-                        String phone = ti.next();
+                        p[num].phone = ti.next();
 
                         System.out.println("Enter Student Class=");
-                        int sclass = ti.nextInt();
+                        p[num].sclass = ti.nextInt();
 
                         System.out.println("Enter Student Marks=");
-                        int marks = ti.nextInt();
+                        p[num].marks = ti.nextInt();
 
                         System.out.println("DATA Stored Successfully!");
                     }
@@ -75,11 +69,11 @@ class PRo1 {
 
                 if (o == 2) {
                     System.out.println("The Records Stored=>");
-                    for (int ii = 0; i <10; i++) 
-                        System.out.print(r[ii] + "Roll number:");
+                    System.out.println("Roll Number \t"+"Name \t"+"Address \t"+"Phone Number \t"+"Class \t"+"Marks \t");
+                    for (num = 0; num == n;) {
+                       System.out.println(p[num].roll+"\t"+p[num].name+"\t"+p[num].add+"\t"+p[num].phone+"\t"+p[num].sclass+"\t"+p[num].marks+"\t");
+                   }
                 }
-                
-            }
 
             if (o == 3) {
                 System.out.println("Enter the roll number to search=");
@@ -99,6 +93,8 @@ class PRo1 {
             }
         }
 
+    }
+
         else if (uu != 569) {
             System.out.println("You Have Enter Incorrect Username!");
         }
@@ -107,5 +103,7 @@ class PRo1 {
             System.out.println("You Have Enter Incorrct Password!");
         }
 
+    
     }
 }
+
