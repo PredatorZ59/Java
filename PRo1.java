@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class PRo1 {
-    public  int roll;
+    public int roll;
     public  String name;
     public  String add;
     public  String phone;
@@ -80,17 +80,29 @@ public class PRo1 {
                 if (o == 3) {
                     System.out.println("Enter the roll number to search=");
                     rs=ti.nextInt();
-                    if(rs==roll){
-                        System.out.println(
-                            "Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t" + "Class \t" + "Marks \t");
+                    for(i=0;i<n;i++){
+                        if(rs==p[i].roll){
+                            System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t" + "Class \t" + "Marks \t");
 
-                        System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone + "\t"
-                            + p[i].sclass + "\t" + p[i].marks + "\t");
+                            System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone 
+                            + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
+                        }
                     }
                 }
 
                 if (o == 4) {
                     System.out.println("Enter the roll number to update=");
+                    rs=ti.nextInt();
+                    for(i=0;i<n;i++){
+                        if(rs==p[i].roll){
+                            System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t" + "Class \t" + "Marks \t");
+
+                            System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone 
+                            + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
+
+                            System.out.println();
+                        }
+                    }
                 }
                 if (o == 5) {
 
