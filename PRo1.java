@@ -64,6 +64,7 @@ public class PRo1 {
                         p[i].marks = ti.nextInt();
 
                         System.out.println("DATA Stored Successfully!");
+
                     }
                 }
 
@@ -87,6 +88,10 @@ public class PRo1 {
                             System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone 
                             + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
                         }
+
+                        else{
+                            System.out.println("ERROR!!-Invalid Roll Number");
+                        }
                     }
                 }
 
@@ -100,12 +105,83 @@ public class PRo1 {
                             System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone 
                             + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
 
-                            System.out.println();
+                            System.out.println("1.Update Roll number");
+                            System.out.println("2.Update Name");
+                            System.out.println("3.Update Address");
+                            System.out.println("4.Update Phone number");
+                            System.out.println("5.Update Class");
+                            System.out.println("6.Update Marks");
+                            System.out.println("Enter the option=");
+                            int op=ti.nextInt();
+
+                            if(op==1){
+                                for(i=0;i<1;i++){
+                                    System.out.println("Enter Student Roll Number=");
+                                    p[i].roll = ti.nextInt();
+                                    System.out.println("DATA Stored Successfully!");
+                                }
+                            }
+
+                            if(op==2){
+                                for(i=0;i<1;i++){
+                                    System.out.println("Enter Student Name=");
+                                    p[i].name = ti.next();   
+                                    System.out.println("DATA Stored Successfully!");
+                                }
+                            }
+
+                            if(op==3){
+                                for(i=0;i<1;i++){
+                                    System.out.println("Enter Student Address=");
+                                    p[i].add = ti.next();
+                                    System.out.println("DATA Stored Successfully!");
+                                }
+                            }
+
+                            if(op==4){
+                                for(i=0;i<1;i++){
+                                    System.out.println("Enter Student phone Number=");
+                                    p[i].phone = ti.next();
+                                    System.out.println("DATA Stored Successfully!");
+                                }
+                            }
+
+                            if(op==5){
+                                for(i=0;i<1;i++){
+                                    System.out.println("Enter Student Class=");
+                                    p[i].sclass = ti.nextInt();
+                                    System.out.println("DATA Stored Successfully!");
+                                }
+                            }
+
+                            if(op==6){
+                                for(i=0;i<1;i++){
+                                    System.out.println("Enter Student Marks=");
+                                    p[i].marks = ti.nextInt();
+                                    System.out.println("DATA Stored Successfully!");
+                                }
+                            }
                         }
                     }
                 }
                 if (o == 5) {
+                    for(i=0;i<n;i++){
+                        if(p[i].marks>27){
+                            System.out.println("*****Pass*****");
+                            System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t" + "Class \t" + "Marks \t");
 
+                            System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone 
+                            + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
+                        }
+
+                        if(p[i].marks<28){
+                            System.out.println("*****Fail*****");
+                            System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t" + "Class \t" + "Marks \t");
+
+                            System.out.println(p[i].roll + "\t" + p[i].name + "\t" + p[i].add + "\t" + p[i].phone 
+                            + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
+                        }
+                    }
                 }
 
                 if (o == 6) {
