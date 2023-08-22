@@ -95,7 +95,7 @@ public class PRo1 {
                 if (o == 4) {
                     System.out.println("Enter the roll number to update=");
                     rs = ti.nextInt();
-                    for (i = 0; i < n; i++) {
+                    for (i = 0; i < 1; i++) {
                         if (rs == p[i].roll) {
                             System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t"
                                     + "Class \t" + "Marks \t");
@@ -163,9 +163,9 @@ public class PRo1 {
                     }
                 }
                 if (o == 5) {
-                    for (i = 0; i < 1; i++) {
-                        if (p[i].marks > 27)System.out.println("*****Pass*****"); {
-                            
+                    for (i = 0; i < n; i++) {
+                        if (p[i].marks > 27) {
+                            System.out.println("*****Pass*****");
                             System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t"
                                     + "Class \t" + "Marks \t");
 
@@ -173,8 +173,8 @@ public class PRo1 {
                                     + "\t" + p[i].sclass + "\t" + p[i].marks + "\t");
                         }
 
-                        if (p[i].marks < 28)System.out.println("*****Fail*****"); {
-                            
+                        if (p[i].marks < 28) {
+                            System.out.println("*****Fail*****");
                             System.out.println("Roll Number \t" + "Name \t" + "Address \t" + "Phone Number \t"
                                     + "Class \t" + "Marks \t");
 
